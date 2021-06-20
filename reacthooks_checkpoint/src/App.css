@@ -79,11 +79,4 @@ select {
   width: 60px;
   height: 35px;
 }
-.loader {
-  border: 12px solid #93a3d6;
-  border-top: 12px solid #363874;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  animation: spin 2s linear infinite;
-}
+
