@@ -37,7 +37,7 @@ class Add extends React.Component {
         <button className="btn-modal" onClick={this.openModal}>
           <img
             className="img-plus"
-            src="https://cpng.pikpng.com/pngl/s/96-965129_plus-sign-icon-button-green-approved-check-add.png"
+            src="https://static.thenounproject.com/png/861197-200.png"
             alt=""
           />
         </button>
