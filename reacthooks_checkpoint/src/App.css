@@ -1,6 +1,10 @@
 .App {
   text-align: center;
 }
+img {
+  height: 420px;
+  width: 280px;
+}
 body {
   background-color: #313131;
 }
