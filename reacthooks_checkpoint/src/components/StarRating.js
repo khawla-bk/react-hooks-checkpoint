@@ -1,23 +1,18 @@
 import React from "react";
+import ReactStars from "react-rating-stars-component";
 
-import StarRatingComponent from "react-star-rating-component";
-
-function StarRating() {
-  state = {
-    rate: 1
-  };
-
-  onStarClick = (nextValue) => {
-    this.props.Rate(nextValue);
+function StarRating({ setRate }) {
+  const ratingChanged = (newRating) => {
+    setRate(newRating);
   };
 
   return (
     <div>
-      <StarRatingComponent
-        className="starrate"
-        starCount={5}
-        onChange={(e) => this.setState(e.target.value)}
-        onStarClick={this.onStarClick}
+      <ReactStars
+        count={5}
+        onChange={ratingChanged}
+        size={24}
+        activeColor="#ffd700"
       />
     </div>
   );
