@@ -16,10 +16,15 @@
   margin-top: 40px;
 }
 .MovieCard {
-  display: flex;
+ border: 1px solid #515873;
+  border-radius: 6px;
+  width: 40%;
+  display: inline-flex;
+  justify-content: space-between;
   flex-direction: row;
-   text-align: center;
+  text-align: center;
   align-items: center;
+  margin: 40px 60px;
 }
 
 .caption {
