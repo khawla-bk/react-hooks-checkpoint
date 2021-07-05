@@ -1,17 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { Form, FormControl } from "react-bootstrap";
 
-const Search = ({ search }) => {
-  const [searchValue, setsearchValue] = useState("");
-
+const Search = ({ setsearchValue }) => {
   return (
     <Form inline onSubmit={(e) => e.preventDefault()}>
       <FormControl
         className="searchbar"
-        value={searchValue}
         onChange={(e) => setsearchValue(e.target.value)}
         type="text"
-        onKeyUp={() => search(searchValue)}
         placeholder="Search"
       />
     </Form>
