@@ -2,7 +2,7 @@ import React from "react";
 import { Form, Button, Modal } from "react-bootstrap";
 import { useState } from "react";
 
-function AddMovie({ Add }) {
+function AddMovie({ handleAdd }) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -60,7 +60,7 @@ function AddMovie({ Add }) {
           <Button
             variant="primary"
             onClick={() =>
-              Add({
+              handleAdd({
                 title: NewTitle,
                 description: NewDesc,
                 rate: NewRate,
