@@ -18,6 +18,8 @@
 .MovieCard {
   display: flex;
   flex-direction: row;
+   text-align: center;
+  align-items: center;
 }
 
 .caption {
@@ -25,6 +27,7 @@
   width: 240px;
 }
 img {
+  padding: 20px;
   height: 420px;
   width: 280px;
 }
