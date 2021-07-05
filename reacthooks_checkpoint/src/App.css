@@ -1,12 +1,35 @@
 .App {
   text-align: center;
 }
+.searchbar {
+  float: right;
+}
+.nav {
+  background-color: black;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  width: -webkit-fill-available;
+  justify-content: center;
+}
+.filter p {
+  margin-top: 40px;
+}
+.MovieCard {
+  display: flex;
+  flex-direction: row;
+}
+
+.caption {
+  display: block;
+  width: 240px;
+}
 img {
   height: 420px;
   width: 280px;
 }
 body {
-  background-color: #313131;
+  background-color: #a5a5a5;
 }
 .filterrating {
   font-size: 20px;
@@ -83,4 +106,3 @@ select {
   width: 60px;
   height: 35px;
 }
-
