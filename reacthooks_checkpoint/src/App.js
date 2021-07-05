@@ -89,6 +89,9 @@ function App() {
 
   const [searchValue, setsearchValue] = useState("");
   const [rate, setRate] = useState(1);
+  const handleAdd = (add) => {
+    setMovies([...movies, add]);
+  };
 
   return (
     <div>
@@ -103,7 +106,7 @@ function App() {
         <br />
       </div>
       <List movies={movies} searchValue={searchValue} rate={rate} />
-      <AddMovie Add={AddMovie} />
+      <AddMovie Add={AddMovie} handleAdd={handleAdd}/>
     </div>
   );
 }
